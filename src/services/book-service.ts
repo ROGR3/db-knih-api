@@ -1,7 +1,7 @@
 import { createAdditionalBookInfoUrl, createBookInfoUrl, fetchPage } from "../fetchers/fetch";
 import { HTMLElement, parse } from 'node-html-parser';
 
-interface BookInfo {
+export interface BookInfo {
     plot?: string;
     genres?: string[];
     year?: number;
@@ -15,7 +15,7 @@ interface BookInfo {
     isbn?: string;
 }
 
-interface Review {
+export interface Review {
     text?: string;
     rating?: number;
     username?: string;

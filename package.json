@@ -1,14 +1,14 @@
 {
   "name": "db-knih-api",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "typescript": "^5.3.3"
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --watch"
   },
   "author": "borecjeborec1",
   "license": "MIT",

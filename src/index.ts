@@ -1,5 +1,5 @@
-import { BookScraper } from "./services/book-service";
-import { SearchScraper } from "./services/search-service";
+import { BookInfo, BookScraper } from "./services/book-service";
+import { SearchInfo, SearchScraper } from "./services/search-service";
 
 class DBKnih {
     constructor(
@@ -7,11 +7,11 @@ class DBKnih {
         private searchService: SearchScraper
     ) { }
 
-    public async search(text: string) {
+    public async search(text: string): Promise<SearchInfo[]> {
         return this.searchService.search(text);
     }
 
-    public async getBookInfo(bookLink: string) {
+    public async getBookInfo(bookLink: string): Promise<BookInfo | undefined> {
         return this.bookService.getBookInfo(bookLink);
     }
 }

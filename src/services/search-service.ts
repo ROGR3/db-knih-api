@@ -1,7 +1,7 @@
 import { fetchPage, createSearchUrl } from "../fetchers/fetch";
 import { HTMLElement, parse } from 'node-html-parser';
 
-interface SearchInfo {
+export interface SearchInfo {
     name?: string;
     cleanName?: string;
     id?: number;
